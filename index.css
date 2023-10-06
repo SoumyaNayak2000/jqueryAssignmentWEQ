@@ -22,7 +22,9 @@
 table {
   margin: 0 auto;
   font-size: large;
-  border: 1px solid black;
+  border: 1px solid rrgb(3, 3, 3);
+  border-collapse: collapse;
+
 }
 
 h1 {
@@ -34,7 +36,7 @@ h1 {
 }
 
 td {
-  background-color: #e4f5d4;
+  background-color: #d8e6cc;
   border: 1px solid black;
 }
 
@@ -49,12 +51,24 @@ td {
 td {
   font-weight: lighter;
 }
+th{
+  background-color: black;
+  color: white;
+}
 
 .pagination-footer {
   margin-top: 50px;
   margin-bottom: 50px;
   display: flex;
   justify-content: space-between;
+}
+.pagination-details{
+  font-weight: bold;
+  padding: 7px;
+  margin-left: 5px;
+  background-color: #dbe8db;
+  border: 3px solid black;
+  border-radius: 9px;
 }
 .pagination-buttons {
   display: inline-block;
