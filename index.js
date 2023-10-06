@@ -4,14 +4,13 @@ $(document).ready(function () {
     var pageNumber = 1;
     var recordsPerPage = 10;
     var total_pages = Math.ceil(list.length / recordsPerPage);
-    console.log(total_pages);
 
     //display pagination buttons
     $.fn.displayPaginationButtons = function () {
       var button_text =
         '<a href="#" onClick = "javascript:$.fn.prevPage();">&laquo;</a>';
       var active = "";
-      for (var i = 1; i < 10; i++) {
+      for (var i = 1; i < (total_pages>10 ? 10 : total_pages); i++) {
         if (i == 1) {
           active = "active";
         } else {
